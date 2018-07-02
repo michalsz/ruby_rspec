@@ -13,6 +13,12 @@ describe Palindrom do
 
       expect(palindrom.palindrom?).to  eq true
     end
+    
+    it 'return true' do
+      palindrom = Palindrom.new('kobyła ma mały bok')
+      
+      expect(palindrom.palindrom?).to  eq true
+    end
 
     context 'is not' do
       it 'return false' do
